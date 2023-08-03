@@ -1,0 +1,91 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+.inicio{
+    margin: auto;
+    padding-top: 5rem;
+    height: 550px;
+    display: flex;
+    align-items:center;
+    text-align: center;
+    justify-content: center;
+}
+
+.inicio .container{
+    padding-top: 1rem;
+}
+
+.inicio h2{
+    font-size: 25px;
+}
+
+.inicio h3{
+    font-weight: normal;
+    padding-top: 2rem;
+}
+
+.inicio .lista-redeSocial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    gap: 3rem;
+}
+
+.inicio  .redeSocial-item{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.inicio  .redeSocial-link{
+    font-weight: bold;
+    color: #8b3baf;
+}
+
+.inicio  .redeSocial-link:hover{
+    color:#ae00ff;
+}
+
+.imagem__Inicio{
+    width: 30%;
+}
+
+@media screen and (max-width: 768px){
+    .inicio {
+        width: 700px;
+        height: 450px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+@media screen and (max-width: 320px){
+    .inicio {
+        width: 620px;
+        height: 700px;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        padding-top: 100px;
+    }
+
+    .inicio .container{
+        width: 600px;
+        justify-content: center;
+    }
+
+    .imagem__Inicio{
+        display: none;
+    }
+
+    .inicio h2{
+        font-size: 40px;
+    }
+
+    h6, h5{
+        font-size: 40px;
+    }
+}

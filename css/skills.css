@@ -1,0 +1,88 @@
+.skills{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills .container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .conteudo{
+    text-align: center;
+}
+
+.skills .icon{
+    width: 30%;
+}
+
+.skills .icon:hover{
+    -webkit-transform: scale(1.0);
+    transform: scale(1.1);
+}
+
+.hobbies{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.hobbies .container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hobbies .conteudo{
+    text-align: center;
+}
+
+.hobbies .icon{
+    width: 25%;
+}
+
+.hobbies .icon:hover{
+    -webkit-transform: scale(1.0);
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px){
+    .hobbies .icon{
+        width: 40%;
+    }
+    .skills .icon{
+        width: 40%;
+    }
+
+}
+
+@media screen and (max-width: 320px){
+    .skills, .hobbies{
+        width: 600px;
+        height: 400px;
+        font-size: 30px;
+    }
+
+    .skills .container, .hobbies .container{
+        width: 600px;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .hobbies .icon{
+        width: 50%;
+    }
+    .skills .icon{
+        width: 50%;
+    }
+
+}

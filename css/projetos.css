@@ -1,0 +1,143 @@
+.projetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projetos .container{
+    width: 950px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding-bottom: 5rem;
+}
+
+.projetos .conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin-left: 3rem;
+    gap: 0.5rem;
+}
+
+.projetos .conteudo-par{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content: flex-end;
+    margin-right: 3rem;
+    gap: 0.5rem;
+}
+
+.projetos .conteudo-par .descricao{
+    text-align: end;
+}
+
+.banner{
+    border: 2px solid rgb(255, 255, 255);
+    width: 40%;
+    height: 30%;
+    justify-content: flex-start;
+    box-shadow: 1px 1px 5px rgb(70, 69, 69);
+}
+
+.banner:hover{
+    -webkit-transform: scale(1.0);
+    transform: scale(1.1);
+}
+
+.banner__Invisivel{
+    display: none;
+}
+
+.projetos .container .legenda{
+    color: rgb(0, 0, 0);
+    text-decoration: solid;
+    font-family: 'Inter';
+    font-weight: bold;
+    justify-content: flex-start;
+}
+
+.botoes{
+    display: flex;
+    gap: 20px;
+    padding-top: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao-repositorio{
+    background-color: #398d66;
+    border-radius: 5px;
+    width: 120px;
+    height: 25px;
+    box-shadow: 2px 2px 2px rgb(110, 109, 109);
+}
+
+.botao-demo{
+    background-color: #90ad9f;
+    border-radius: 5px;
+    width: 100px;
+    height: 25px;
+    box-shadow: 2px 2px 2px rgb(110, 109, 109);
+}
+
+.link-github{
+    border-radius: 5px;
+    color: rgb(247, 243, 243);
+    font-size: 13px;
+}
+
+.link-github:hover{
+    color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 768px){
+    .projetos .container{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .projetos{
+        width: 600px;
+    }
+    .projetos .container{
+        width: 90%;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        font-size: 25px;
+        padding-top: 50px;
+    }
+
+    .projetos .conteudo, .conteudo-par{
+        justify-content: center;
+        padding-top: 20px;  
+    }
+
+    .banner{
+        width: 100%;
+    }
+
+    .banner__Invisivel{
+        display: block;
+    }
+
+    .banner__Instagram{
+        display: none;
+    }
+    .botao-demo, .botao-repositorio{
+        width: 250px;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .link-github{
+        font-size: 35px;
+    }
+}
